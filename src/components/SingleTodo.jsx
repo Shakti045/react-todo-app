@@ -28,7 +28,7 @@ const SingleTodo = ({todo}) => {
         toast.success('Todo Updated Successfully');
     }
   return (
-    <div className=' w-full flex justify-between items-center border-b-[0.5px] pb-2 border-slate-600'>
+    <div className=' w-full flex justify-between items-center flex-wrap border-b-[0.5px] pb-2 border-slate-600'>
         
         {
             updateMode ? 
@@ -41,7 +41,7 @@ const SingleTodo = ({todo}) => {
             </div>
             :
             <>
-        <div className=' max-w-[75%] flex  items-center gap-2'>
+        <div className=' max-w-[70%] flex    items-center gap-2'>
         <div>
             <div onClick={()=>{
                 dispatch(toggleTodo(todo?.id));
